@@ -11,7 +11,7 @@ namespace GroceryNearMe.Models
         public string Name { get; set; }
         public string Description { get; set; }
 
-        public List<Store> Stores { get; set; }
+        public List<Store>? Stores { get; set; }
 
     }
 }

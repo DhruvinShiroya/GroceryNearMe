@@ -9,5 +9,20 @@ namespace GroceryNearMe.Data
             : base(options)
         {
         }
+
+        public DbSet<GroceryNearMe.Models.Address> Addresses { get; set; }
+        public DbSet<GroceryNearMe.Models.Category> Categories { get; set; }
+
+        public DbSet<GroceryNearMe.Models.Company> Companies { get; set; }
+
+        public DbSet<GroceryNearMe.Models.Store> Stores  { get; set; }
+            
+        public DbSet<GroceryNearMe.Models.Review> Reviews  { get; set; }
+
+        public DbSet<GroceryNearMe.Models.Product> Products { get; set; }
+       
+
+
+
     }
 }
