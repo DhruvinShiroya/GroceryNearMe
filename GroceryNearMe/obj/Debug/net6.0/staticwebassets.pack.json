@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
+      "Id": "D:\\programming Filies\\Model view controller C#\\Lab1\\GroceryNearMe\\GroceryNearMe\\wwwroot\\js\\sorttable.js",
+      "PackagePath": "staticwebassets\\js\\sorttable.js"
+    },
+    {
       "Id": "D:\\programming Filies\\Model view controller C#\\Lab1\\GroceryNearMe\\GroceryNearMe\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },

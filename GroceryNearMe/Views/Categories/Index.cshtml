@@ -9,7 +9,7 @@
 <p>
     <a class="btn btn-primary" class="btn btn-primary" asp-action="Create">Create New</a>
 </p>
-<table class="table">
+<table class="table table-striped bg-gradient sortable">
     <thead>
         <tr>
             <th>
@@ -18,7 +18,9 @@
             <th>
                 @Html.DisplayNameFor(model => model.Description)
             </th>
-            <th></th>
+            <th>
+                @Html.DisplayNameFor(model => model.Image)
+            </th>
         </tr>
     </thead>
     <tbody>
@@ -29,6 +31,9 @@
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Image)
             </td>
             <td>
                      <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.Id">Edit</a> 

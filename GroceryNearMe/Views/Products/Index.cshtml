@@ -7,9 +7,9 @@
 <h1>Index</h1>
 
 <p>
-    <a  class="btn btn-primary" asp-action="Create">Create New</a>
+    <a asp-action="Create">Create New</a>
 </p>
-<table class="table">
+<table class="table bg-gradient table-striped sortable">
     <thead>
         <tr>
             <th>
@@ -22,10 +22,10 @@
                 @Html.DisplayNameFor(model => model.Price)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Category)
+                @Html.DisplayNameFor(model => model.QuntityInKG)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.ReviewId)
+                @Html.DisplayNameFor(model => model.Category)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Store)
@@ -49,10 +49,10 @@
                 @Html.DisplayFor(modelItem => item.Price)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Category.Name)
+                @Html.DisplayFor(modelItem => item.QuntityInKG)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.ReviewId)
+                @Html.DisplayFor(modelItem => item.Category.Name)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Store.Name)

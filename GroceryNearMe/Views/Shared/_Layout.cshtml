@@ -26,12 +26,14 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Products" asp-action="Index" asp-route-Id="">Grocery</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Stores" asp-action="Index" asp-route-Id="">Shop By Stores</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Stores" asp-action="Index" asp-route-Id="">Stores</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Companies" asp-action="Index" asp-route-Id="">Shop By Company</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Companies" asp-action="Index" asp-route-Id="">Company</a>
                         </li>
-                        
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Categories" asp-action="Index" asp-route-Id="">Category</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
@@ -56,5 +58,8 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
+
+   <!-- add sortable library from https://www.kryogenix.org/code/browser/sorttable/ -->
+    <script src="~/js/sorttable.js"></script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/KnjJEb3VF0UQh3KKnN0DSYjjWvdUZE4nzVfxGCyhhU=",
+  "Hash": "xfsiWygjW4b+a+rQEk7v60tJ4Ts8Obv420bvRsxYH2E=",
   "Source": "GroceryNearMe",
   "BasePath": "_content/GroceryNearMe",
   "Mode": "Default",
@@ -1120,6 +1120,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
+    },
+    {
+      "Identity": "D:\\programming Filies\\Model view controller C#\\Lab1\\GroceryNearMe\\GroceryNearMe\\wwwroot\\js\\sorttable.js",
+      "SourceId": "GroceryNearMe",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\programming Filies\\Model view controller C#\\Lab1\\GroceryNearMe\\GroceryNearMe\\wwwroot\\",
+      "BasePath": "_content/GroceryNearMe",
+      "RelativePath": "js/sorttable.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\sorttable.js"
     },
     {
       "Identity": "D:\\programming Filies\\Model view controller C#\\Lab1\\GroceryNearMe\\GroceryNearMe\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",

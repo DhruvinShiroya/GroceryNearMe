@@ -14,6 +14,7 @@ namespace GroceryNearMe.Models
         [Required]
         public string? Description { get; set; }
 
+        [Range(0.01,100000,ErrorMessage ="Invalid Price")]
         [DisplayFormat(DataFormatString = "{0:c}")]
         public decimal Price { get; set; }
 
@@ -23,11 +24,9 @@ namespace GroceryNearMe.Models
 
         public int StoreId { get; set; }
 
-        public int ReviewId { get; set; }
-
         public Store? Store { get; set; }
-
-        public Review? Review { get; set; }
+    
+        public List<Review>? Review { get; set; }
 
         public String? image { get; set; }
          
