@@ -1,13 +1,13 @@
 ﻿@model IEnumerable<GroceryNearMe.Models.Review>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Write Review";
 }
 
-<h1>Index</h1>
+<h1>Read Review</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a  class="btn btn-primary" asp-action="Create">Create New</a>
 </p>
 <table class="table">
     <thead>
@@ -55,9 +55,9 @@
                 @Html.DisplayFor(modelItem => item.ProductID)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.ReviewId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.ReviewId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.ReviewId">Delete</a>
+                 <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.ReviewId">Edit</a> 
+                    <a class="btn btn-info" asp-action="Details" asp-route-id="@item.ReviewId">Details</a> 
+                    <a class="btn btn-danger" asp-action="Delete" asp-route-id="@item.ReviewId">Delete</a>
             </td>
         </tr>
 }

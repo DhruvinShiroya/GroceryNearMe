@@ -1,5 +1,8 @@
-﻿using Microsoft.Build.Framework;
+﻿using MessagePack;
+using Microsoft.Build.Framework;
 using Microsoft.EntityFrameworkCore.Metadata;
+using System.ComponentModel.DataAnnotations;
+using RequiredAttribute = System.ComponentModel.DataAnnotations.RequiredAttribute;
 
 namespace GroceryNearMe.Models
 {
@@ -10,10 +13,11 @@ namespace GroceryNearMe.Models
         public string? Name { get; set; }
         [Required]
         public string? Description { get; set; }
-        [Required]
+
+        [DisplayFormat(DataFormatString = "{0:c}")]
         public decimal Price { get; set; }
 
-        
+        public float? QuntityInKG { get; set; } = null;
         public int CategoryId { get; set; }
         public Category? Category { get; set; }
 

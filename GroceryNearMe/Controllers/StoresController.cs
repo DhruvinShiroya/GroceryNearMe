@@ -49,7 +49,7 @@ namespace GroceryNearMe.Controllers
         // GET: Stores/Create
         public IActionResult Create()
         {
-            ViewData["AddressId"] = new SelectList(_context.Addresses, "Id", "City");
+            ViewData["AddressId"] = new SelectList(_context.Addresses, "Id", "StreetName");
             ViewData["CompanyId"] = new SelectList(_context.Companies, "Id", "Name");
             return View();
         }
@@ -67,7 +67,7 @@ namespace GroceryNearMe.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["AddressId"] = new SelectList(_context.Addresses, "Id", "City", store.AddressId);
+            ViewData["AddressId"] = new SelectList(_context.Addresses, "Id", "StreetName", store.AddressId);
             ViewData["CompanyId"] = new SelectList(_context.Companies, "Id", "Name", store.CompanyId);
             return View(store);
         }
@@ -85,7 +85,7 @@ namespace GroceryNearMe.Controllers
             {
                 return NotFound();
             }
-            ViewData["AddressId"] = new SelectList(_context.Addresses, "Id", "City", store.AddressId);
+            ViewData["AddressId"] = new SelectList(_context.Addresses, "Id", "StreetName", store.AddressId);
             ViewData["CompanyId"] = new SelectList(_context.Companies, "Id", "Name", store.CompanyId);
             return View(store);
         }
@@ -122,7 +122,7 @@ namespace GroceryNearMe.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["AddressId"] = new SelectList(_context.Addresses, "Id", "City", store.AddressId);
+            ViewData["AddressId"] = new SelectList(_context.Addresses, "Id", "StreetName", store.AddressId);
             ViewData["CompanyId"] = new SelectList(_context.Companies, "Id", "Name", store.CompanyId);
             return View(store);
         }
