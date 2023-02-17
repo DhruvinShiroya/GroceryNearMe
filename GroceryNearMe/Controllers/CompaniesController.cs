@@ -54,10 +54,19 @@ namespace GroceryNearMe.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Description,Image")] Company company)
+        public async Task<IActionResult> Create([Bind("Id,Name,Description,Image")] Company company, IFormFile Image,string? CurrentPhoto)
         {
+            
             if (ModelState.IsValid)
             {
+                if(Image != null)
+                {
+                    company.Image = UploadPhoto(Image);
+                }
+                else
+                {
+                    company.Image = CurrentPhoto;
+                }
                 _context.Add(company);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -68,6 +77,7 @@ namespace GroceryNearMe.Controllers
         // GET: Companies/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
+            
             if (id == null || _context.Companies == null)
             {
                 return NotFound();
@@ -86,8 +96,10 @@ namespace GroceryNearMe.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Description,Image")] Company company)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Description,Image")] Company company, IFormFile? Image, string? currentPhoto)
         {
+            
+            
             if (id != company.Id)
             {
                 return NotFound();
@@ -95,6 +107,17 @@ namespace GroceryNearMe.Controllers
 
             if (ModelState.IsValid)
             {
+                if (Image != null)
+                {
+                    // add file name to the database
+                    company.Image = UploadPhoto(Image);
+                }
+                else
+                {
+                    // keep the original photo
+                    company.Image = currentPhoto;
+                }
+
                 try
                 {
                     _context.Update(company);
@@ -156,6 +179,21 @@ namespace GroceryNearMe.Controllers
         private bool CompanyExists(int id)
         {
           return _context.Companies.Any(e => e.Id == id);
+        }
+
+        private static string UploadPhoto(IFormFile image)
+        {
+            // create unique file name to store in the directory
+            var fileName = Guid.NewGuid().ToString() + "-" + image.FileName;
+            // add prefix to your path so it is saved in the directory you want
+            var uploadFilePath = Directory.GetCurrentDirectory() + "\\wwwroot\\img\\company\\" + fileName;
+            // copy photo to the uploadFilePath
+            using (var stream = new FileStream(uploadFilePath, FileMode.Create))
+            {
+                image.CopyTo(stream);
+            }
+
+            return fileName;
         }
     }
 }

@@ -54,10 +54,22 @@ namespace GroceryNearMe.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Description")] Category category)
+        public async Task<IActionResult> Create([Bind("Id,Name,Description,Image")] Category category, IFormFile? Image, string? CurrentPhoto)
         {
+            
             if (ModelState.IsValid)
             {
+
+                if (Image != null)
+                {
+                    // add file name to the database
+                    category.Image = UploadPhoto(Image);
+                }
+                else
+                {
+                    // keep the original photo
+                    category.Image = CurrentPhoto;
+                }
                 _context.Add(category);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -86,8 +98,9 @@ namespace GroceryNearMe.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Description")] Category category)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Description,Image")] Category category, IFormFile? Image,string? CurrentPhoto)
         {
+            
             if (id != category.Id)
             {
                 return NotFound();
@@ -95,6 +108,18 @@ namespace GroceryNearMe.Controllers
 
             if (ModelState.IsValid)
             {
+                
+                if (Image != null)
+                {
+                    // add file name to the database
+                    category.Image = UploadPhoto(Image);
+                }
+                else
+                {
+                    // keep the original photo
+                    category.Image = CurrentPhoto;
+                }
+
                 try
                 {
                     _context.Update(category);
@@ -156,6 +181,21 @@ namespace GroceryNearMe.Controllers
         private bool CategoryExists(int id)
         {
           return _context.Categories.Any(e => e.Id == id);
+        }
+
+        private static string UploadPhoto(IFormFile image)
+        {
+            // create unique file name to store in the directory
+            var fileName = Guid.NewGuid().ToString() + "-" + image.FileName;
+            // add prefix to your path so it is saved in the directory you want
+            var uploadFilePath = Directory.GetCurrentDirectory() + "\\wwwroot\\img\\category\\" + fileName;
+            // copy photo to the uploadFilePath
+            using (var stream = new FileStream(uploadFilePath, FileMode.Create))
+            {
+                image.CopyTo(stream);
+            }
+
+            return fileName;
         }
     }
 }

@@ -13,6 +13,38 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\programming Filies\\Model view controller C#\\Lab1\\GroceryNearMe\\GroceryNearMe\\wwwroot\\img\\category\\301e3b33-1b63-44be-be1d-1cc496a859ea-unsplash-hp-laptop-gaming-1-min.jpg",
+      "PackagePath": "staticwebassets\\img\\category\\301e3b33-1b63-44be-be1d-1cc496a859ea-unsplash-hp-laptop-gaming-1-min.jpg"
+    },
+    {
+      "Id": "D:\\programming Filies\\Model view controller C#\\Lab1\\GroceryNearMe\\GroceryNearMe\\wwwroot\\img\\category\\9771c4dc-c178-4160-bcbb-34fcc2804646-unsplash-dell-laptop-2-min.jpg",
+      "PackagePath": "staticwebassets\\img\\category\\9771c4dc-c178-4160-bcbb-34fcc2804646-unsplash-dell-laptop-2-min.jpg"
+    },
+    {
+      "Id": "D:\\programming Filies\\Model view controller C#\\Lab1\\GroceryNearMe\\GroceryNearMe\\wwwroot\\img\\company\\1d84487c-dfd7-46f3-af1e-c48d7bed3d88-Zehrs.png",
+      "PackagePath": "staticwebassets\\img\\company\\1d84487c-dfd7-46f3-af1e-c48d7bed3d88-Zehrs.png"
+    },
+    {
+      "Id": "D:\\programming Filies\\Model view controller C#\\Lab1\\GroceryNearMe\\GroceryNearMe\\wwwroot\\img\\company\\892615d7-5b62-4589-95c5-fbee0deb8056-pexels-keyboard-white-1-min.jpg",
+      "PackagePath": "staticwebassets\\img\\company\\892615d7-5b62-4589-95c5-fbee0deb8056-pexels-keyboard-white-1-min.jpg"
+    },
+    {
+      "Id": "D:\\programming Filies\\Model view controller C#\\Lab1\\GroceryNearMe\\GroceryNearMe\\wwwroot\\img\\company\\8b61cbd2-5235-4eac-80fb-381533062c8a-pexels-logitech-mouse-1-min.jpg",
+      "PackagePath": "staticwebassets\\img\\company\\8b61cbd2-5235-4eac-80fb-381533062c8a-pexels-logitech-mouse-1-min.jpg"
+    },
+    {
+      "Id": "D:\\programming Filies\\Model view controller C#\\Lab1\\GroceryNearMe\\GroceryNearMe\\wwwroot\\img\\company\\b27fef78-b671-47c8-8527-cea08679ab00-pexels-apple-mouse-1-min.jpg",
+      "PackagePath": "staticwebassets\\img\\company\\b27fef78-b671-47c8-8527-cea08679ab00-pexels-apple-mouse-1-min.jpg"
+    },
+    {
+      "Id": "D:\\programming Filies\\Model view controller C#\\Lab1\\GroceryNearMe\\GroceryNearMe\\wwwroot\\img\\company\\f265a9e2-fb34-461f-ac4d-4760b134ac43-unsplash-dell-laptop-2-min.jpg",
+      "PackagePath": "staticwebassets\\img\\company\\f265a9e2-fb34-461f-ac4d-4760b134ac43-unsplash-dell-laptop-2-min.jpg"
+    },
+    {
+      "Id": "D:\\programming Filies\\Model view controller C#\\Lab1\\GroceryNearMe\\GroceryNearMe\\wwwroot\\img\\product\\db85008e-cb1c-47a6-95f4-d19fc7625f07-pexels-keyboard-rgb-1-min.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\db85008e-cb1c-47a6-95f4-d19fc7625f07-pexels-keyboard-rgb-1-min.jpg"
+    },
+    {
       "Id": "D:\\programming Filies\\Model view controller C#\\Lab1\\GroceryNearMe\\GroceryNearMe\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

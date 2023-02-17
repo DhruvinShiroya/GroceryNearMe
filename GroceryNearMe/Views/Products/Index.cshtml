@@ -58,8 +58,11 @@
                 @Html.DisplayFor(modelItem => item.Store.Name)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.image)
-            </td>
+                    @if (item.image != null)
+                    {
+                      <img src="img/product/@Html.DisplayFor(modelItem => item.image)" alt="@item.image" width="300px" height="auto" >
+                    } 
+             </td>
             <td>
                      <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.Id">Edit</a> 
                         <a class="btn btn-info" asp-action="Details" asp-route-id="@item.Id">Details</a> 

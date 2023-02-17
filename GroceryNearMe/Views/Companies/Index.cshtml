@@ -34,8 +34,9 @@
                 @Html.DisplayFor(modelItem => item.Description)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Image)
-                <img src="@item.Image" alt="@item.Image" width="300px" height="auto" >
+                @if(item.Image != null){
+              <img src="img/company/@Html.DisplayFor(modelItem => item.Image)" alt="@item.Image" width="300px" height="auto" >
+                }
             </td>
             <td>
                      <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.Id">Edit</a> 

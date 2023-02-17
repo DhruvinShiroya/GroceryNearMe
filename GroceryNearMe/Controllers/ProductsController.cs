@@ -59,10 +59,20 @@ namespace GroceryNearMe.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Description,Price,QuntityInKG,CategoryId,StoreId,image")] Product product)
+        public async Task<IActionResult> Create([Bind("Id,Name,Description,Price,QuntityInKG,CategoryId,StoreId,image")] Product product, IFormFile? Image, string? CurrentPhoto)
         {
             if (ModelState.IsValid)
             {
+                if (Image != null)
+                {
+                    // add file name to the database
+                    product.image = UploadPhoto(Image);
+                }
+                else
+                {
+                    // keep the original photo
+                    product.image = CurrentPhoto;
+                }
                 _context.Add(product);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -95,7 +105,7 @@ namespace GroceryNearMe.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Description,Price,QuntityInKG,CategoryId,StoreId,image")] Product product)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Description,Price,QuntityInKG,CategoryId,StoreId,image")] Product product, IFormFile? Image, string? CurrentPhoto)
         {
             if (id != product.Id)
             {
@@ -104,6 +114,16 @@ namespace GroceryNearMe.Controllers
 
             if (ModelState.IsValid)
             {
+                if (Image != null)
+                {
+                    // add file name to the database
+                    product.image = UploadPhoto(Image);
+                }
+                else
+                {
+                    // keep the original photo
+                    product.image = CurrentPhoto;
+                }
                 try
                 {
                     _context.Update(product);
@@ -170,5 +190,21 @@ namespace GroceryNearMe.Controllers
         {
           return _context.Products.Any(e => e.Id == id);
         }
+
+        private static string UploadPhoto(IFormFile image)
+        {
+            // create unique file name to store in the directory
+            var fileName = Guid.NewGuid().ToString() + "-" + image.FileName;
+            // add prefix to your path so it is saved in the directory you want
+            var uploadFilePath = Directory.GetCurrentDirectory() + "\\wwwroot\\img\\product\\" + fileName;
+            // copy photo to the uploadFilePath
+            using (var stream = new FileStream(uploadFilePath, FileMode.Create))
+            {
+                image.CopyTo(stream);
+            }
+
+            return fileName;
+        }
+
     }
 }
