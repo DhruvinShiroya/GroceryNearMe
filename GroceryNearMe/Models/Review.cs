@@ -5,13 +5,13 @@ namespace GroceryNearMe.Models
     public class Review
     {
         public int ReviewId { get; set; }
-        public string UserName { get; set; }
+        public String? UserName { get; set; }
 
         [Range(0, 5)]
         public int Rating { get; set; }
 
         [Range(0, 250)]
-        public string Comment { get; set; }
+        public String? Comment { get; set; }
 
         public int UpVote
         {

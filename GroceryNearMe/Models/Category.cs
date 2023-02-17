@@ -9,10 +9,10 @@ namespace GroceryNearMe.Models
 
         [Required]
         [MinLength(3)]
-        public string Name { get; set; }
+        public string? Name { get; set; }
 
         [MaxLength(1000)]
-        public string Description { get; set; }
+        public string? Description { get; set; }
 
 
         public List<Product>? Products { get; set; } 
