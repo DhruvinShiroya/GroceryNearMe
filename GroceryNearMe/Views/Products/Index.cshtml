@@ -1,22 +1,19 @@
 ﻿@model IEnumerable<GroceryNearMe.Models.Product>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Products";
 }
 
-<h1>Index</h1>
+<h1>Products</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a class="btn btn-primary " asp-action="Create">Create New</a>
 </p>
 <table class="table bg-gradient table-striped sortable">
     <thead>
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.Name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Description)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Price)
@@ -43,9 +40,6 @@
                 @Html.DisplayFor(modelItem => item.Name)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.Price)
             </td>
             <td>
@@ -58,10 +52,8 @@
                 @Html.DisplayFor(modelItem => item.Store.Name)
             </td>
             <td>
-                    @if (item.image != null)
-                    {
-                      <img src="img/product/@Html.DisplayFor(modelItem => item.image)" alt="@item.image" width="300px" height="auto" >
-                    } 
+                 <img src="./img/product/@item.image" alt="@item.image" width="300px" height="auto" >
+                    
              </td>
             <td>
                      <a class="btn btn-warning" asp-action="Edit" asp-route-id="@item.Id">Edit</a> 

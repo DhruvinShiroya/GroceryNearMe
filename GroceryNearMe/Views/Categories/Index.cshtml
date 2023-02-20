@@ -16,9 +16,6 @@
                 @Html.DisplayNameFor(model => model.Name)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Description)
-            </th>
-            <th>
                 @Html.DisplayNameFor(model => model.Image)
             </th>
         </tr>
@@ -29,10 +26,7 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Name)
             </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Description)
-            </td>
-            <td>
+             <td>
                     @if(item.Image != null)
                     {
                          <img src="img/category/@Html.DisplayFor(modelItem => item.Image)" alt="@item.Image" width="300px" height="auto" >

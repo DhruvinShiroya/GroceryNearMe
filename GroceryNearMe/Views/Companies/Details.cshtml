@@ -4,7 +4,7 @@
     ViewData["Title"] = "Details";
 }
 
-<h1>Details</h1>
+<h1>Details About Company</h1>
 
 <div>
     <h4>Company</h4>
@@ -26,8 +26,14 @@
             @Html.DisplayNameFor(model => model.Image)
         </dt>
         <dd class = "col-sm-10">
-            <img src="img/company/@Html.DisplayFor(model => model.Image)" alt="@Model.Image" width="300px" height="auto" >
 
+            @if (Model.Image != null)
+            {
+              <img src="/img/company/@Model.Image" alt="@Model.Image" width="300px" height="auto" >
+
+
+            }
+            
         </dd>
     </dl>
 </div>
