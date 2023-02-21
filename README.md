@@ -5,10 +5,10 @@ also let's you create Store under that company <br/>
 provide address to the store <br/>
 Create product under different stores <br/>
 
---first user will have to create a company
--- store has address to add address for the store before you add the store to it
--- then user will have create a store under it
--- and after that user can add product and select which store is it from
+--first user will have to create a company <br/>
+-- store has address to add address for the store before you add the store to it<br/>
+-- then user will have create a store under Company so select company from the list<br/>
+-- and after that user can add product and select which store is it from<br/>
 
 github repo - https://github.com/DhruvinShiroya/GroceryNearMe.git <br/>
 
