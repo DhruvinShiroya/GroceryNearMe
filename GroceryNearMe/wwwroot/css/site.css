@@ -36,6 +36,11 @@ li, p, ul, table {
     font-size:16px;
 }
 
+img{
+    margin: 20px;
+    padding:20px;
+}
+
 
 .green, nav {
     background-color: #9acd32;
@@ -50,13 +55,16 @@ footer {
     
 }
 
-body{
+body {
     color: black;
+    Overflow-y: scroll;
 }
 
 .category-circle-img{
-    height:100px;
-    width:100px;
+    height:150px;
+    width:150px;
+    padding:0px;
+    margin:auto;
 }
 
 .by-link a:hover{
@@ -83,4 +91,17 @@ a:visited{
     height:400px;
     width: auto;
 }
+
+.product-img{
+    height:100px;
+    width: auto;
+}
+
+.product-img-detail{
+    height:400px;
+    width: auto;
+}
+
+
+
 

@@ -1,10 +1,12 @@
 ﻿@model GroceryNearMe.Models.Category
 
 @{
-    ViewData["Title"] = "Shop by" + Model.Name ;
+    ViewData["Title"] = "Shop by " + Model.Name ;
 }
 
 <h1>Select Product</h1>
+
+<p> Category > @Model.Name</p>
 
 <section class="row card-group">
 
