@@ -85,6 +85,8 @@ a:visited{
 .company-img{
     height:100px;
     width: auto;
+    margin:0px;
+    padding:0px;
 }
 
 .company-img-detail{
@@ -95,6 +97,9 @@ a:visited{
 .product-img{
     height:100px;
     width: auto;
+    margin:0px;
+    padding:0px;
+
 }
 
 .product-img-detail{
