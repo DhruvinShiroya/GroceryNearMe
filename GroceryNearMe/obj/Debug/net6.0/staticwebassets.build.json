@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "YxpnVkx46brz6VhQQW/o27QDGienjVy1vJvAub7lK7c=",
+  "Hash": "fVMAZFKP7y7FLLmMcsGVTaKMecqSt2MlP7enEgKwci8=",
   "Source": "GroceryNearMe",
   "BasePath": "_content/GroceryNearMe",
   "Mode": "Default",
@@ -1222,6 +1222,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\company\\f265a9e2-fb34-461f-ac4d-4760b134ac43-unsplash-dell-laptop-2-min.jpg"
+    },
+    {
+      "Identity": "D:\\programming Filies\\Model view controller C#\\Lab1\\GroceryNearMe\\GroceryNearMe\\wwwroot\\img\\product\\b1e72da2-1fe2-4a6f-b0c3-f1f83bb2c2a5-unsplash-hp-laptop-2-min.jpg",
+      "SourceId": "GroceryNearMe",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\programming Filies\\Model view controller C#\\Lab1\\GroceryNearMe\\GroceryNearMe\\wwwroot\\",
+      "BasePath": "_content/GroceryNearMe",
+      "RelativePath": "img/product/b1e72da2-1fe2-4a6f-b0c3-f1f83bb2c2a5-unsplash-hp-laptop-2-min.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\product\\b1e72da2-1fe2-4a6f-b0c3-f1f83bb2c2a5-unsplash-hp-laptop-2-min.jpg"
     },
     {
       "Identity": "D:\\programming Filies\\Model view controller C#\\Lab1\\GroceryNearMe\\GroceryNearMe\\wwwroot\\img\\product\\db85008e-cb1c-47a6-95f4-d19fc7625f07-pexels-keyboard-rgb-1-min.jpg",

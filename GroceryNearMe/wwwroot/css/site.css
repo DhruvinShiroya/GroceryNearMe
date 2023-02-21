@@ -73,3 +73,14 @@ a:link{
 a:visited{
     color:black;
 }
+
+.company-img{
+    height:100px;
+    width: auto;
+}
+
+.company-img-detail{
+    height:400px;
+    width: auto;
+}
+

@@ -17,9 +17,10 @@
             <div class="col-lg-2 mb-3">
                 <div class="card mb-4 p-0">
                     <div class="card-body text-center h-100 w-100">
+                            <a class="by-link" asp-action="Category" asp-route-id="@item.Id">
                         <img class="rounded-circle category-circle-img" src="./img/category/@Html.DisplayFor(modelItem => item.Image)" alt="@Html.DisplayFor(modelItem => item.Image)"/>
                         <br>
-                        <a class="by-link" asp-action="Category" asp-route-id="@item.Id">@Html.DisplayFor(modelItem => item.Name)</a>            
+                         @Html.DisplayFor(modelItem => item.Name)</a>            
                     </div>
                 </div>
             </div>

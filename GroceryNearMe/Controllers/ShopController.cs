@@ -1,5 +1,6 @@
 ﻿using GroceryNearMe.Data;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace GroceryNearMe.Controllers
 {
@@ -21,5 +22,17 @@ namespace GroceryNearMe.Controllers
 
             return View(result);
         }
+
+
+        public IActionResult Category(int id)
+        {
+            var productByCategory = _context.Categories.Include(c => c.Products).FirstOrDefault(c => c.Id == id);
+
+            if (productByCategory == null)
+            {
+                return NotFound();
+            }
+            return View(productByCategory);
+        }    
     }
-}
+} 

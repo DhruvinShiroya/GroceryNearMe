@@ -1,0 +1,25 @@
+﻿@model GroceryNearMe.Models.Category
+
+@{
+    ViewData["Title"] = "Shop by" + Model.Name ;
+}
+
+<h1>Select Product</h1>
+
+<section class="row card-group">
+
+    @foreach (var item in Model.Products)
+    {
+                <div class="col-lg-2 mb-3">
+                    <div class="card mb-4 p-0">
+                        <div class="card-body text-center h-100 w-100">
+                                <a class="by-link" asp-controller="Products" asp-action="Details" asp-route-id="@item.Id">
+                            <img class="rounded-circle category-circle-img" src="/img/product/@item.image" alt="@Html.DisplayFor(modelItem => item.image)"/>
+                            <br>
+                        @Html.DisplayFor(modelItem => item.Name)</a>            
+                        </div>
+                    </div>
+                </div>
+
+    }
+</section>

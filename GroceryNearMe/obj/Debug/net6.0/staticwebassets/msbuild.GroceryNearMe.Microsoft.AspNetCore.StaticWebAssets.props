@@ -160,6 +160,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\company\f265a9e2-fb34-461f-ac4d-4760b134ac43-unsplash-dell-laptop-2-min.jpg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\product\b1e72da2-1fe2-4a6f-b0c3-f1f83bb2c2a5-unsplash-hp-laptop-2-min.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>GroceryNearMe</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/GroceryNearMe</BasePath>
+      <RelativePath>img/product/b1e72da2-1fe2-4a6f-b0c3-f1f83bb2c2a5-unsplash-hp-laptop-2-min.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\product\b1e72da2-1fe2-4a6f-b0c3-f1f83bb2c2a5-unsplash-hp-laptop-2-min.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\product\db85008e-cb1c-47a6-95f4-d19fc7625f07-pexels-keyboard-rgb-1-min.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>GroceryNearMe</SourceId>

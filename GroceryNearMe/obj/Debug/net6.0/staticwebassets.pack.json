@@ -41,6 +41,10 @@
       "PackagePath": "staticwebassets\\img\\company\\f265a9e2-fb34-461f-ac4d-4760b134ac43-unsplash-dell-laptop-2-min.jpg"
     },
     {
+      "Id": "D:\\programming Filies\\Model view controller C#\\Lab1\\GroceryNearMe\\GroceryNearMe\\wwwroot\\img\\product\\b1e72da2-1fe2-4a6f-b0c3-f1f83bb2c2a5-unsplash-hp-laptop-2-min.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\b1e72da2-1fe2-4a6f-b0c3-f1f83bb2c2a5-unsplash-hp-laptop-2-min.jpg"
+    },
+    {
       "Id": "D:\\programming Filies\\Model view controller C#\\Lab1\\GroceryNearMe\\GroceryNearMe\\wwwroot\\img\\product\\db85008e-cb1c-47a6-95f4-d19fc7625f07-pexels-keyboard-rgb-1-min.jpg",
       "PackagePath": "staticwebassets\\img\\product\\db85008e-cb1c-47a6-95f4-d19fc7625f07-pexels-keyboard-rgb-1-min.jpg"
     },
