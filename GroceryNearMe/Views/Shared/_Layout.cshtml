@@ -7,9 +7,15 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/GroceryNearMe.styles.css" asp-append-version="true" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+
+
 </head>
 <body>
-    <header>
+    <header class="green" >
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">GroceryNearMe</a>
@@ -35,6 +41,12 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Categories" asp-action="Index" asp-route-Id="">Category</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Reviews" asp-action="Index" asp-route-Id="">Review</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Addresses" asp-action="Index" asp-route-Id="">Address</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>
                     </ul>
@@ -52,6 +64,7 @@
     <footer class="border-top footer text-muted">
         <div class="container">
             &copy; 2023 - GroceryNearMe - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <p class="p3">Dhruvinkumar shiroya - 200503894 <br /> Server-Side Scripting-ASP.NET - 01 COMP2084-23W-21415</p>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
