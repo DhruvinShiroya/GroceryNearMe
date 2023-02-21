@@ -11,6 +11,7 @@ namespace GroceryNearMe.Models
 
         [Required]
         [MaxLength(255)]
+        [Display(Name ="Street Name")]
         public string? StreetName { get; set; }
 
         [Required]
@@ -24,6 +25,7 @@ namespace GroceryNearMe.Models
 
         [Required]
         [MaxLength(100)]
+        [Display(Name ="Postal Code")]
         public string? PostalCode { get; set;} = null;
 
     }
