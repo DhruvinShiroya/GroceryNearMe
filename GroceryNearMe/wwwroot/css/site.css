@@ -37,8 +37,10 @@ li, p, ul, table {
 }
 
 
-.green {
+.green, nav {
     background-color: #9acd32;
+    padding-top : 0px;
+    padding-bottom :0px;
     margin:0px;
 }
 
@@ -46,4 +48,28 @@ footer {
     background-color: #9acd32;
     color: #000000;
     
+}
+
+body{
+    color: black;
+}
+
+.category-circle-img{
+    height:100px;
+    width:100px;
+}
+
+.by-link a:hover{
+    text-decoration:none;
+    cursor:pointer;
+    color:green;
+}
+
+a:link{
+    text-decoration:none;
+    color:black;
+}
+
+a:visited{
+    color:black;
 }

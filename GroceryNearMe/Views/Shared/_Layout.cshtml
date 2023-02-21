@@ -14,10 +14,10 @@
 
 
 </head>
-<body class="green">
-    <header class="green" >
+<body>
+    <header >
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white text-white border-bottom box-shadow mb-3 green">
-            <div class="container-fluid green">
+            <div class="container-fluid p-3 green">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">GroceryNearMe</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
@@ -29,7 +29,10 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Products" asp-action="Index" asp-route-Id="">Grocery</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Shop" asp-action="Index" asp-route-Id="">Shop By Category</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Products" asp-action="Index" asp-route-Id="">Products</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Stores" asp-action="Index" asp-route-Id="">Stores</a>
@@ -74,5 +77,5 @@
 
    <!-- add sortable library from https://www.kryogenix.org/code/browser/sorttable/ -->
     <script src="~/js/sorttable.js"></script>
-</bod>
+</body>
 </html>
