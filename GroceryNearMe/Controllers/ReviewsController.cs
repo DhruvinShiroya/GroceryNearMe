@@ -46,6 +46,7 @@ namespace GroceryNearMe.Controllers
         // GET: Reviews/Create
         public IActionResult Create()
         {
+            ViewData["ProductId"] = new SelectList(_context.Products, "Id", "ProductName");
             return View();
         }
 
@@ -62,6 +63,8 @@ namespace GroceryNearMe.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+
+            ViewData["ProductId"] = new SelectList(_context.Products, "Id", "ProductName",review.ProductID);
             return View(review);
         }
 

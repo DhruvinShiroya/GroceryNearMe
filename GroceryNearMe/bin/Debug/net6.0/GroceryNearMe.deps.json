@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "GroceryNearMe/1.0.0": {
         "dependencies": {
+          "Microsoft.AspNetCore.Authentication.Google": "6.0.13",
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "6.0.13",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.13",
           "Microsoft.AspNetCore.Identity.UI": "6.0.13",
@@ -53,6 +54,14 @@
         }
       },
       "MessagePackAnalyzer/2.1.152": {},
+      "Microsoft.AspNetCore.Authentication.Google/6.0.13": {
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.Authentication.Google.dll": {
+            "assemblyVersion": "6.0.13.0",
+            "fileVersion": "6.0.1322.58013"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Cryptography.Internal/6.0.13": {
         "runtime": {
           "lib/net6.0/Microsoft.AspNetCore.Cryptography.Internal.dll": {
@@ -2383,6 +2392,13 @@
       "sha512": "sha512-uJhZlGMkXDaFYsH8V9S6o1EyvsUqB9mpU4DVBXNr0DXZVzZMhuLP1IkLj5xK3EKlaAcvkFkZv3eSvuz360wb3Q==",
       "path": "messagepackanalyzer/2.1.152",
       "hashPath": "messagepackanalyzer.2.1.152.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Authentication.Google/6.0.13": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3y4TSrLwWqOyog9j8Y4bqpq++SYUI/+RHDCAKFceB2ifFE1MH5kg9bVmOlQz8/0vD8MHBA/4jD7wlXYhziV6oQ==",
+      "path": "microsoft.aspnetcore.authentication.google/6.0.13",
+      "hashPath": "microsoft.aspnetcore.authentication.google.6.0.13.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Cryptography.Internal/6.0.13": {
       "type": "package",

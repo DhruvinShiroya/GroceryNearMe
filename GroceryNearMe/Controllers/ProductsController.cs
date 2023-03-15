@@ -107,6 +107,8 @@ namespace GroceryNearMe.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Name,Description,Price,QuntityInKG,CategoryId,StoreId,image")] Product product, IFormFile? Image, string? CurrentPhoto)
         {
+            
+
             if (id != product.Id)
             {
                 return NotFound();
@@ -117,13 +119,10 @@ namespace GroceryNearMe.Controllers
                 if (Image != null)
                 {
                     // add file name to the database
-                    product.image = UploadPhoto(Image);
+                    DeleteImage(CurrentPhoto);
+                    
                 }
-                else
-                {
-                    // keep the original photo
-                    product.image = CurrentPhoto;
-                }
+                product.image = UploadPhoto(Image);
                 try
                 {
                     _context.Update(product);
@@ -150,6 +149,7 @@ namespace GroceryNearMe.Controllers
         // GET: Products/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
+
             if (id == null || _context.Products == null)
             {
                 return NotFound();
@@ -172,6 +172,8 @@ namespace GroceryNearMe.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
+            
+
             if (_context.Products == null)
             {
                 return Problem("Entity set 'ApplicationDbContext.Products'  is null.");
@@ -179,6 +181,13 @@ namespace GroceryNearMe.Controllers
             var product = await _context.Products.FindAsync(id);
             if (product != null)
             {
+                if (product.image != null)
+                {
+                    // add file name to the database
+                    DeleteImage(product.image);
+
+                }
+                
                 _context.Products.Remove(product);
             }
             
@@ -206,5 +215,27 @@ namespace GroceryNearMe.Controllers
             return fileName;
         }
 
+
+        private static void DeleteImage(string photo)
+        {
+            var path = Directory.GetCurrentDirectory() + "\\wwwroot\\img\\product\\" + photo;
+
+            try
+            {
+                if (System.IO.File.Exists(path))
+                {
+                    System.IO.File.Delete(path);
+                }
+
+            }
+            catch (IOException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+        } 
+
     }
+
+    
+
 }

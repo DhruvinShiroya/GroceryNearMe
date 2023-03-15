@@ -18,7 +18,10 @@ namespace GroceryNearMe.Models
         [DisplayFormat(DataFormatString = "{0:c}")]
         public decimal Price { get; set; }
 
-        public float? QuntityInKG { get; set; } = null;
+        [Display(Name= "Quantity")]
+        public float? QuantityInKG { get; set; } = null;
+
+        
         public int CategoryId { get; set; }
         public Category? Category { get; set; }
 

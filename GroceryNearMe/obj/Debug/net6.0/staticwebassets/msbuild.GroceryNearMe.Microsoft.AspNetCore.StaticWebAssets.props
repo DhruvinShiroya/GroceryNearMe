@@ -176,12 +176,12 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\product\b1e72da2-1fe2-4a6f-b0c3-f1f83bb2c2a5-unsplash-hp-laptop-2-min.jpg))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\product\db85008e-cb1c-47a6-95f4-d19fc7625f07-pexels-keyboard-rgb-1-min.jpg))">
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\product\ce680e51-e28b-457f-a1f9-aaf60a6b5f5d-pexels-acer-chromebook-1-min.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>GroceryNearMe</SourceId>
       <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
       <BasePath>_content/GroceryNearMe</BasePath>
-      <RelativePath>img/product/db85008e-cb1c-47a6-95f4-d19fc7625f07-pexels-keyboard-rgb-1-min.jpg</RelativePath>
+      <RelativePath>img/product/ce680e51-e28b-457f-a1f9-aaf60a6b5f5d-pexels-acer-chromebook-1-min.jpg</RelativePath>
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Primary</AssetRole>
@@ -190,7 +190,7 @@
       <AssetTraitValue></AssetTraitValue>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\product\db85008e-cb1c-47a6-95f4-d19fc7625f07-pexels-keyboard-rgb-1-min.jpg))</OriginalItemSpec>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\product\ce680e51-e28b-457f-a1f9-aaf60a6b5f5d-pexels-acer-chromebook-1-min.jpg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\js\site.js))">
       <SourceType>Package</SourceType>

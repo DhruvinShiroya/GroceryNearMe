@@ -10,9 +10,20 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
     .AddEntityFrameworkStores<ApplicationDbContext>();
 builder.Services.AddControllersWithViews();
+
+
+var configuarion = builder.Configuration;
+builder.Services.AddAuthentication()
+    .AddGoogle(Options =>
+    {
+        Options.ClientId = configuarion["Authentication:Google:ClientId"];
+        Options.ClientSecret = configuarion["Authentication:Google:ClientSecret"];
+
+    }); 
+
 
 var app = builder.Build();
 

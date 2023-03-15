@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "fVMAZFKP7y7FLLmMcsGVTaKMecqSt2MlP7enEgKwci8=",
+  "Hash": "09o2kCfrBZIei6XcNCe37sh4FUfsQuMRJPYg3RyQs3Q=",
   "Source": "GroceryNearMe",
   "BasePath": "_content/GroceryNearMe",
   "Mode": "Default",
@@ -1241,12 +1241,12 @@
       "OriginalItemSpec": "wwwroot\\img\\product\\b1e72da2-1fe2-4a6f-b0c3-f1f83bb2c2a5-unsplash-hp-laptop-2-min.jpg"
     },
     {
-      "Identity": "D:\\programming Filies\\Model view controller C#\\Lab1\\GroceryNearMe\\GroceryNearMe\\wwwroot\\img\\product\\db85008e-cb1c-47a6-95f4-d19fc7625f07-pexels-keyboard-rgb-1-min.jpg",
+      "Identity": "D:\\programming Filies\\Model view controller C#\\Lab1\\GroceryNearMe\\GroceryNearMe\\wwwroot\\img\\product\\ce680e51-e28b-457f-a1f9-aaf60a6b5f5d-pexels-acer-chromebook-1-min.jpg",
       "SourceId": "GroceryNearMe",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\programming Filies\\Model view controller C#\\Lab1\\GroceryNearMe\\GroceryNearMe\\wwwroot\\",
       "BasePath": "_content/GroceryNearMe",
-      "RelativePath": "img/product/db85008e-cb1c-47a6-95f4-d19fc7625f07-pexels-keyboard-rgb-1-min.jpg",
+      "RelativePath": "img/product/ce680e51-e28b-457f-a1f9-aaf60a6b5f5d-pexels-acer-chromebook-1-min.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1255,7 +1255,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\product\\db85008e-cb1c-47a6-95f4-d19fc7625f07-pexels-keyboard-rgb-1-min.jpg"
+      "OriginalItemSpec": "wwwroot\\img\\product\\ce680e51-e28b-457f-a1f9-aaf60a6b5f5d-pexels-acer-chromebook-1-min.jpg"
     },
     {
       "Identity": "D:\\programming Filies\\Model view controller C#\\Lab1\\GroceryNearMe\\GroceryNearMe\\wwwroot\\js\\site.js",

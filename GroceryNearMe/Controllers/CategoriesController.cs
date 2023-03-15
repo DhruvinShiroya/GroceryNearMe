@@ -112,6 +112,7 @@ namespace GroceryNearMe.Controllers
                 if (Image != null)
                 {
                     // add file name to the database
+                    DeleteImage(CurrentPhoto);
                     category.Image = UploadPhoto(Image);
                 }
                 else
@@ -171,6 +172,7 @@ namespace GroceryNearMe.Controllers
             var category = await _context.Categories.FindAsync(id);
             if (category != null)
             {
+                DeleteImage(category.Image);
                 _context.Categories.Remove(category);
             }
             
@@ -197,5 +199,23 @@ namespace GroceryNearMe.Controllers
 
             return fileName;
         }
+        private static void DeleteImage(string photo)
+        {
+            var path = Directory.GetCurrentDirectory() + "\\wwwroot\\img\\category\\" + photo;
+
+            try
+            {
+                if (System.IO.File.Exists(path))
+                {
+                    System.IO.File.Delete(path);
+                }
+
+            }
+            catch (IOException e)
+            {
+                Console.WriteLine(e.Message);
+            }
+        }
+
     }
 }
