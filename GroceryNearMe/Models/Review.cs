@@ -18,17 +18,19 @@ namespace GroceryNearMe.Models
 
 
         [Display(Name = "Up vote")]
+        [Range(0, 1)]
         public int UpVote
         {
             get; set;
         }
-
+        [Range(0, 1)]
         [Display(Name ="Down vote")]
         public int DownVote
         {
             get; set;
         }
 
+        [Display(Name ="Product")]
         public int ProductID { get; set; }
 
         public String? ProductName { get; set; }

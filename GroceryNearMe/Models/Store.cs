@@ -10,8 +10,10 @@ namespace GroceryNearMe.Models
         [Required]
         public string? Name { get; set; }
 
+        [Display(Name = "Address")]
         public int AddressId { get; set; }
 
+        [Display(Name = "Company")]
         public int CompanyId { get; set; }
 
         public Company? CompanyName { get; set; }

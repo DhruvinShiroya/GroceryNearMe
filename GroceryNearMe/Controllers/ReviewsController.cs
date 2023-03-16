@@ -12,8 +12,8 @@ using System.Data;
 
 namespace GroceryNearMe.Controllers
 {
-    [Authorize(Roles = "Administrator")]
-    [Authorize(Roles = "Client")]
+    [Authorize]
+    
     public class ReviewsController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -51,7 +51,7 @@ namespace GroceryNearMe.Controllers
         // GET: Reviews/Create
         public IActionResult Create()
         {
-            ViewData["ProductId"] = new SelectList(_context.Products, "Id", "ProductName");
+            ViewData["ProductId"] = new SelectList(_context.Products, "Id", "Name");
             return View();
         }
 

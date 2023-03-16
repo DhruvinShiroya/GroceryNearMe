@@ -31,7 +31,7 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Shop" asp-action="Index" asp-route-Id="">Shop By Category</a>
                         </li>
-                        @if (User.Identity.IsAuthenticated)
+                        @if (User.IsInRole("Administrator") || User.IsInRole("Client") )
                         {
                              <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Products" asp-action="Index" asp-route-Id="">Products</a>
@@ -46,12 +46,17 @@
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Categories" asp-action="Index" asp-route-Id="">Category</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Reviews" asp-action="Index" asp-route-Id="">Review</a>
-                            </li>
-                            <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Addresses" asp-action="Index" asp-route-Id="">Address</a>
                             </li>
                         }
+                        @if (User.IsInRole("Administrator") || User.IsInRole("Customer") )
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Reviews" asp-action="Index" asp-route-Id="">Review</a>
+                            </li>
+                        }
+
+                        
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
                         </li>

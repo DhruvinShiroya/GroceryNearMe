@@ -13,7 +13,7 @@ using System.Data;
 namespace GroceryNearMe.Controllers
 {
     [Authorize(Roles = "Administrator")]
-    [Authorize(Roles = "Client")]
+    
     public class ProductsController : Controller
     {
         private readonly ApplicationDbContext _context;

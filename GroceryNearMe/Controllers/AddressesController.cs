@@ -12,7 +12,7 @@ using Microsoft.AspNetCore.Authorization;
 namespace GroceryNearMe.Controllers
 {
     [Authorize(Roles = "Administrator")]
-    [Authorize(Roles = "Client")]
+    
     public class AddressesController : Controller
     {
         private readonly ApplicationDbContext _context;
