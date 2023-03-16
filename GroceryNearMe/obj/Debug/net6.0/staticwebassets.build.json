@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "09o2kCfrBZIei6XcNCe37sh4FUfsQuMRJPYg3RyQs3Q=",
+  "Hash": "hFY1LBQhWuqqbUUkgodq1pDGe0y6rnUpfn5Ws2dzNCs=",
   "Source": "GroceryNearMe",
   "BasePath": "_content/GroceryNearMe",
   "Mode": "Default",
@@ -1105,23 +1105,6 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\programming Filies\\Model view controller C#\\Lab1\\GroceryNearMe\\GroceryNearMe\\wwwroot\\img\\category\\301e3b33-1b63-44be-be1d-1cc496a859ea-unsplash-hp-laptop-gaming-1-min.jpg",
-      "SourceId": "GroceryNearMe",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\programming Filies\\Model view controller C#\\Lab1\\GroceryNearMe\\GroceryNearMe\\wwwroot\\",
-      "BasePath": "_content/GroceryNearMe",
-      "RelativePath": "img/category/301e3b33-1b63-44be-be1d-1cc496a859ea-unsplash-hp-laptop-gaming-1-min.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\img\\category\\301e3b33-1b63-44be-be1d-1cc496a859ea-unsplash-hp-laptop-gaming-1-min.jpg"
-    },
-    {
       "Identity": "D:\\programming Filies\\Model view controller C#\\Lab1\\GroceryNearMe\\GroceryNearMe\\wwwroot\\img\\category\\9771c4dc-c178-4160-bcbb-34fcc2804646-unsplash-dell-laptop-2-min.jpg",
       "SourceId": "GroceryNearMe",
       "SourceType": "Discovered",
@@ -1137,6 +1120,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\category\\9771c4dc-c178-4160-bcbb-34fcc2804646-unsplash-dell-laptop-2-min.jpg"
+    },
+    {
+      "Identity": "D:\\programming Filies\\Model view controller C#\\Lab1\\GroceryNearMe\\GroceryNearMe\\wwwroot\\img\\category\\b42f466a-5595-4665-af36-acdc0b43db79-pexels-apple-mouse-1-min.jpg",
+      "SourceId": "GroceryNearMe",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\programming Filies\\Model view controller C#\\Lab1\\GroceryNearMe\\GroceryNearMe\\wwwroot\\",
+      "BasePath": "_content/GroceryNearMe",
+      "RelativePath": "img/category/b42f466a-5595-4665-af36-acdc0b43db79-pexels-apple-mouse-1-min.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\category\\b42f466a-5595-4665-af36-acdc0b43db79-pexels-apple-mouse-1-min.jpg"
     },
     {
       "Identity": "D:\\programming Filies\\Model view controller C#\\Lab1\\GroceryNearMe\\GroceryNearMe\\wwwroot\\img\\company\\1d84487c-dfd7-46f3-af1e-c48d7bed3d88-Zehrs.png",

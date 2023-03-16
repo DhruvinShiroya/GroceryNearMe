@@ -1,9 +1,12 @@
 ﻿using GroceryNearMe.Data;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Data;
 
 namespace GroceryNearMe.Controllers
 {
+    
     public class ShopController : Controller
     {
         private readonly ApplicationDbContext _context;

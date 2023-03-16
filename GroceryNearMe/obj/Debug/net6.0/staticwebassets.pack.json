@@ -13,12 +13,12 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "D:\\programming Filies\\Model view controller C#\\Lab1\\GroceryNearMe\\GroceryNearMe\\wwwroot\\img\\category\\301e3b33-1b63-44be-be1d-1cc496a859ea-unsplash-hp-laptop-gaming-1-min.jpg",
-      "PackagePath": "staticwebassets\\img\\category\\301e3b33-1b63-44be-be1d-1cc496a859ea-unsplash-hp-laptop-gaming-1-min.jpg"
-    },
-    {
       "Id": "D:\\programming Filies\\Model view controller C#\\Lab1\\GroceryNearMe\\GroceryNearMe\\wwwroot\\img\\category\\9771c4dc-c178-4160-bcbb-34fcc2804646-unsplash-dell-laptop-2-min.jpg",
       "PackagePath": "staticwebassets\\img\\category\\9771c4dc-c178-4160-bcbb-34fcc2804646-unsplash-dell-laptop-2-min.jpg"
+    },
+    {
+      "Id": "D:\\programming Filies\\Model view controller C#\\Lab1\\GroceryNearMe\\GroceryNearMe\\wwwroot\\img\\category\\b42f466a-5595-4665-af36-acdc0b43db79-pexels-apple-mouse-1-min.jpg",
+      "PackagePath": "staticwebassets\\img\\category\\b42f466a-5595-4665-af36-acdc0b43db79-pexels-apple-mouse-1-min.jpg"
     },
     {
       "Id": "D:\\programming Filies\\Model view controller C#\\Lab1\\GroceryNearMe\\GroceryNearMe\\wwwroot\\img\\company\\1d84487c-dfd7-46f3-af1e-c48d7bed3d88-Zehrs.png",

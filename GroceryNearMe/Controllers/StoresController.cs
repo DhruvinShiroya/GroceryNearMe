@@ -7,9 +7,13 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using GroceryNearMe.Data;
 using GroceryNearMe.Models;
+using Microsoft.AspNetCore.Authorization;
+using System.Data;
 
 namespace GroceryNearMe.Controllers
 {
+    [Authorize(Roles = "Administrator")]
+    [Authorize(Roles = "Client")]
     public class StoresController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -26,6 +30,7 @@ namespace GroceryNearMe.Controllers
             return View(await applicationDbContext.ToListAsync());
         }
 
+        [AllowAnonymous]
         // GET: Stores/Details/5
         public async Task<IActionResult> Details(int? id)
         {
