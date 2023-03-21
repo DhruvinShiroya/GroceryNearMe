@@ -18,3 +18,8 @@ github repo - https://github.com/DhruvinShiroya/GroceryNearMe.git <br/>
 live website link - https://grocerynearme.azurewebsites.net/Categories <br/>
 
 Exprerimental feature - review has been trying to add but could not solve the user and comment problem. under link of Review in navbar
+
+## google authentication is added
+-- administrator can only add delete product
+-- user can only see the product
+-- user can give reviews but can not create product.
