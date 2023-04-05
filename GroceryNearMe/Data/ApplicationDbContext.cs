@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using GroceryNearMe.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace GroceryNearMe.Data
@@ -20,7 +21,9 @@ namespace GroceryNearMe.Data
         public DbSet<GroceryNearMe.Models.Review>? Reviews  { get; set; }
 
         public DbSet<GroceryNearMe.Models.Product>? Products { get; set; }
-       
+
+        public DbSet<GroceryNearMe.Models.CartItem>? CartItems { get; set; }
+
 
 
 

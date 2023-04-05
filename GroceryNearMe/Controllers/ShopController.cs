@@ -1,8 +1,11 @@
 ﻿using GroceryNearMe.Data;
+using GroceryNearMe.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using System.Data;
+using Microsoft.AspNetCore.Identity;
 
 namespace GroceryNearMe.Controllers
 {
@@ -36,6 +39,18 @@ namespace GroceryNearMe.Controllers
                 return NotFound();
             }
             return View(productByCategory);
-        }    
+        }
+
+        // add product to the cartItem.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        
+
+        public String getUserId()
+        {
+            Console.WriteLine(User.Identity.Name);
+            return User.Identity.Name ;
+
+        }
     }
 } 

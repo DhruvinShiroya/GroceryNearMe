@@ -13,8 +13,24 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "D:\\programming Filies\\Model view controller C#\\Lab1\\GroceryNearMe\\GroceryNearMe\\wwwroot\\img\\category\\0ea58f01-bf68-4c78-b165-bd42bfe083af-unsplash-acer-laptop-1-min.jpg",
+      "PackagePath": "staticwebassets\\img\\category\\0ea58f01-bf68-4c78-b165-bd42bfe083af-unsplash-acer-laptop-1-min.jpg"
+    },
+    {
+      "Id": "D:\\programming Filies\\Model view controller C#\\Lab1\\GroceryNearMe\\GroceryNearMe\\wwwroot\\img\\category\\2d165a5c-ee42-4e36-95c0-5f5effb35c36-pexels-acer-chromebook-1-min.jpg",
+      "PackagePath": "staticwebassets\\img\\category\\2d165a5c-ee42-4e36-95c0-5f5effb35c36-pexels-acer-chromebook-1-min.jpg"
+    },
+    {
+      "Id": "D:\\programming Filies\\Model view controller C#\\Lab1\\GroceryNearMe\\GroceryNearMe\\wwwroot\\img\\category\\67eb46a6-51bd-4ece-87c4-cc36ab848c0d-unsplash-apple-macbook-air-1-min.jpg",
+      "PackagePath": "staticwebassets\\img\\category\\67eb46a6-51bd-4ece-87c4-cc36ab848c0d-unsplash-apple-macbook-air-1-min.jpg"
+    },
+    {
       "Id": "D:\\programming Filies\\Model view controller C#\\Lab1\\GroceryNearMe\\GroceryNearMe\\wwwroot\\img\\category\\9771c4dc-c178-4160-bcbb-34fcc2804646-unsplash-dell-laptop-2-min.jpg",
       "PackagePath": "staticwebassets\\img\\category\\9771c4dc-c178-4160-bcbb-34fcc2804646-unsplash-dell-laptop-2-min.jpg"
+    },
+    {
+      "Id": "D:\\programming Filies\\Model view controller C#\\Lab1\\GroceryNearMe\\GroceryNearMe\\wwwroot\\img\\category\\a1536104-720b-4ad6-a012-f7165eb7a22d-26b5CM.png",
+      "PackagePath": "staticwebassets\\img\\category\\a1536104-720b-4ad6-a012-f7165eb7a22d-26b5CM.png"
     },
     {
       "Id": "D:\\programming Filies\\Model view controller C#\\Lab1\\GroceryNearMe\\GroceryNearMe\\wwwroot\\img\\category\\b42f466a-5595-4665-af36-acdc0b43db79-pexels-apple-mouse-1-min.jpg",
@@ -25,20 +41,56 @@
       "PackagePath": "staticwebassets\\img\\company\\1d84487c-dfd7-46f3-af1e-c48d7bed3d88-Zehrs.png"
     },
     {
+      "Id": "D:\\programming Filies\\Model view controller C#\\Lab1\\GroceryNearMe\\GroceryNearMe\\wwwroot\\img\\company\\3b28c74c-8866-4762-87f5-cbc8f05f70d9-pexels-logitech-mouse-1-min.jpg",
+      "PackagePath": "staticwebassets\\img\\company\\3b28c74c-8866-4762-87f5-cbc8f05f70d9-pexels-logitech-mouse-1-min.jpg"
+    },
+    {
+      "Id": "D:\\programming Filies\\Model view controller C#\\Lab1\\GroceryNearMe\\GroceryNearMe\\wwwroot\\img\\company\\420a7fd9-16a1-40e1-9dfe-f75cf6d70513-unsplash-dell-laptop-3-min.jpg",
+      "PackagePath": "staticwebassets\\img\\company\\420a7fd9-16a1-40e1-9dfe-f75cf6d70513-unsplash-dell-laptop-3-min.jpg"
+    },
+    {
       "Id": "D:\\programming Filies\\Model view controller C#\\Lab1\\GroceryNearMe\\GroceryNearMe\\wwwroot\\img\\company\\892615d7-5b62-4589-95c5-fbee0deb8056-pexels-keyboard-white-1-min.jpg",
       "PackagePath": "staticwebassets\\img\\company\\892615d7-5b62-4589-95c5-fbee0deb8056-pexels-keyboard-white-1-min.jpg"
+    },
+    {
+      "Id": "D:\\programming Filies\\Model view controller C#\\Lab1\\GroceryNearMe\\GroceryNearMe\\wwwroot\\img\\company\\89fddc11-c647-45a2-ac59-a367b284127a-pexels-mouse-rbg-1-min.jpg",
+      "PackagePath": "staticwebassets\\img\\company\\89fddc11-c647-45a2-ac59-a367b284127a-pexels-mouse-rbg-1-min.jpg"
     },
     {
       "Id": "D:\\programming Filies\\Model view controller C#\\Lab1\\GroceryNearMe\\GroceryNearMe\\wwwroot\\img\\company\\8b61cbd2-5235-4eac-80fb-381533062c8a-pexels-logitech-mouse-1-min.jpg",
       "PackagePath": "staticwebassets\\img\\company\\8b61cbd2-5235-4eac-80fb-381533062c8a-pexels-logitech-mouse-1-min.jpg"
     },
     {
+      "Id": "D:\\programming Filies\\Model view controller C#\\Lab1\\GroceryNearMe\\GroceryNearMe\\wwwroot\\img\\company\\9f6ec266-87e6-43f3-89ed-655c139af7a7-unsplash-laptop-1-min.jpg",
+      "PackagePath": "staticwebassets\\img\\company\\9f6ec266-87e6-43f3-89ed-655c139af7a7-unsplash-laptop-1-min.jpg"
+    },
+    {
       "Id": "D:\\programming Filies\\Model view controller C#\\Lab1\\GroceryNearMe\\GroceryNearMe\\wwwroot\\img\\company\\b27fef78-b671-47c8-8527-cea08679ab00-pexels-apple-mouse-1-min.jpg",
       "PackagePath": "staticwebassets\\img\\company\\b27fef78-b671-47c8-8527-cea08679ab00-pexels-apple-mouse-1-min.jpg"
     },
     {
+      "Id": "D:\\programming Filies\\Model view controller C#\\Lab1\\GroceryNearMe\\GroceryNearMe\\wwwroot\\img\\company\\c10fb26a-0a03-460f-9999-41fdeec25cfa-unsplash-laptop-1-min.jpg",
+      "PackagePath": "staticwebassets\\img\\company\\c10fb26a-0a03-460f-9999-41fdeec25cfa-unsplash-laptop-1-min.jpg"
+    },
+    {
+      "Id": "D:\\programming Filies\\Model view controller C#\\Lab1\\GroceryNearMe\\GroceryNearMe\\wwwroot\\img\\company\\cefc811f-0b54-4287-ba02-75506f945375-pexels-apple-mouse-1-min.jpg",
+      "PackagePath": "staticwebassets\\img\\company\\cefc811f-0b54-4287-ba02-75506f945375-pexels-apple-mouse-1-min.jpg"
+    },
+    {
       "Id": "D:\\programming Filies\\Model view controller C#\\Lab1\\GroceryNearMe\\GroceryNearMe\\wwwroot\\img\\company\\f265a9e2-fb34-461f-ac4d-4760b134ac43-unsplash-dell-laptop-2-min.jpg",
       "PackagePath": "staticwebassets\\img\\company\\f265a9e2-fb34-461f-ac4d-4760b134ac43-unsplash-dell-laptop-2-min.jpg"
+    },
+    {
+      "Id": "D:\\programming Filies\\Model view controller C#\\Lab1\\GroceryNearMe\\GroceryNearMe\\wwwroot\\img\\product\\301c1148-b77c-453e-9b83-007540318137-pexels-apple-ipad-pro-1-min.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\301c1148-b77c-453e-9b83-007540318137-pexels-apple-ipad-pro-1-min.jpg"
+    },
+    {
+      "Id": "D:\\programming Filies\\Model view controller C#\\Lab1\\GroceryNearMe\\GroceryNearMe\\wwwroot\\img\\product\\60da9e1b-e513-4d05-a21c-45777eab8377-pexels-dell-laptop-1-min.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\60da9e1b-e513-4d05-a21c-45777eab8377-pexels-dell-laptop-1-min.jpg"
+    },
+    {
+      "Id": "D:\\programming Filies\\Model view controller C#\\Lab1\\GroceryNearMe\\GroceryNearMe\\wwwroot\\img\\product\\8c722520-5ac4-423c-a0fb-07e88202dc06-unsplash-apple-macbook-air-1-min.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\8c722520-5ac4-423c-a0fb-07e88202dc06-unsplash-apple-macbook-air-1-min.jpg"
     },
     {
       "Id": "D:\\programming Filies\\Model view controller C#\\Lab1\\GroceryNearMe\\GroceryNearMe\\wwwroot\\img\\product\\b1e72da2-1fe2-4a6f-b0c3-f1f83bb2c2a5-unsplash-hp-laptop-2-min.jpg",
@@ -47,6 +99,10 @@
     {
       "Id": "D:\\programming Filies\\Model view controller C#\\Lab1\\GroceryNearMe\\GroceryNearMe\\wwwroot\\img\\product\\ce680e51-e28b-457f-a1f9-aaf60a6b5f5d-pexels-acer-chromebook-1-min.jpg",
       "PackagePath": "staticwebassets\\img\\product\\ce680e51-e28b-457f-a1f9-aaf60a6b5f5d-pexels-acer-chromebook-1-min.jpg"
+    },
+    {
+      "Id": "D:\\programming Filies\\Model view controller C#\\Lab1\\GroceryNearMe\\GroceryNearMe\\wwwroot\\img\\product\\e608fec7-f09c-471a-b1c9-2cbc79ac2c34-unsplash-dell-laptop-2-min.jpg",
+      "PackagePath": "staticwebassets\\img\\product\\e608fec7-f09c-471a-b1c9-2cbc79ac2c34-unsplash-dell-laptop-2-min.jpg"
     },
     {
       "Id": "D:\\programming Filies\\Model view controller C#\\Lab1\\GroceryNearMe\\GroceryNearMe\\wwwroot\\js\\site.js",

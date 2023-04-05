@@ -12,7 +12,7 @@ using System.Data;
 
 namespace GroceryNearMe.Controllers
 {
-    [Authorize(Roles = "Administrator")]
+    [Authorize(Roles = "Administrator,Client")]
     
     public class CompaniesController : Controller
     {
