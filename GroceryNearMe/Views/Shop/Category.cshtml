@@ -24,11 +24,10 @@
                         @Html.DisplayFor(modelItem => item.Name)</a>
                         <br>
                             <h6>@item.Price.ToString("C")</h6> 
-                            <form method="post" action="/shop/AddToCart">
+                            <form method="POST" action="/Shop/AddToCart">
                                 <input type="hidden" id="ProductId" name="ProductId" value="@item.Id" >
-                                <input type="hidden" id="CustomerId" name="CustomerId" value="@User.Identity.Name">
                                 <input type="hidden" id="Quantity" name="Quantity" value="1" >
-                                <button class="btn btn-primary" action="Submit">Add to Cart</button>
+                                <button class="btn btn-primary" >Add to Cart</button>
                             </form>
                         </div>
                     </div>
