@@ -1,9 +1,13 @@
 using GroceryNearMe.Controllers;
 using GroceryNearMe.Data;
 using GroceryNearMe.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
+using Microsoft.CodeAnalysis;
 using Microsoft.EntityFrameworkCore;
 using NuGet.DependencyResolver;
+using System.Configuration;
 using System.Net;
 
 namespace GroceryNearMeTests
@@ -20,8 +24,10 @@ namespace GroceryNearMeTests
         private Store _store;
         private List<Product> _products = new List<Product>();
         private List<Review> _review = new List<Review>();
-
-
+        private static int productId = 100000;
+        private static int categoryId = 100000;
+        private static int reviewId = 100000;
+        private static int storeId = 100000;
         // this is ran when the class is created
         [TestInitialize]
         public void TestIntialize()
@@ -233,15 +239,160 @@ namespace GroceryNearMeTests
             var idExist = 124;
 
             // act
-            // pass null value 
+            // pass id value
             var result = (ViewResult) await _controller.Details(idExist);
 
             // assert 
-            // if return value is not found 
-            
+            // if return value is same as _product list  
+            // test passed
             Assert.AreEqual(result.Model, _products.Find(p => p.Id == idExist));
         }
 
+        // test Get /create method
+
+        [TestMethod]
+        public void GetCreatProductPage()
+        {
+            // act
+            var result = (ViewResult)_controller.Create();
+            SelectList categoryList = (SelectList) result.ViewData["CategoryId"];
+            
+
+            // assert
+            Assert.AreEqual(null, result.ViewName);
+            // data passed for category
+            Assert.IsNotNull(categoryList);
+
+            foreach (var category in categoryList)
+            {
+                Assert.AreEqual(_category.Name, category.Text);
+               Assert.AreEqual(_category.Id,  Int32.Parse(category.Value));
+            }
+        }
+
+        // test post Product/Create method
+
+        [TestMethod]
+        public async Task CreateModelStateInvalid()
+        {
+            //arrange
+            Product newProduct = GetNewProduct();
+            _controller.ModelState.AddModelError("InvalidParameter", "Require Parameter does not exist");
+            var result = (ViewResult)await _controller.Create(newProduct, null, null);
+
+            // assert
+            // result will not be null
+            Assert.IsNotNull(result);
+            // to confirm that model state is invalid
+            Assert.IsFalse(_controller.ModelState.IsValid);
+            // so the given product won't be stored in the _context
+            // so result is null
+            Assert.IsNull(await _context.Products.FindAsync(newProduct.Id));
+            
+        }
+
+        [TestMethod]
+        public async Task CreatePostForValidModel()
+        {
+            // given the model state is valid 
+            //arrange
+            Product newProduct = GetNewProduct();
+            
+            var result = (RedirectToActionResult)await _controller.Create(newProduct, null, null);
+
+            // assert
+            // result will not be null
+            Assert.IsNotNull(result);
+            // to confirm that model state is invalid
+            Assert.IsTrue(_controller.ModelState.IsValid);
+            // so the given product will be stored in the _context
+            // so result is not  null
+            Assert.AreEqual(newProduct,
+                await _context.Products.FindAsync(newProduct.Id));
+
+        }
+
+
+        [TestMethod]
+        public async Task CreatePostForNullInputImage()
+        {
+            // given the model state is valid 
+            //arrange
+            Product newProduct = GetNewProduct();
+            var currentImage = "Current Image";
+
+            var result = (RedirectToActionResult)await _controller.Create(newProduct, null, currentImage);
+
+            // assert
+            // result will not be null
+            Assert.IsNotNull(result);
+            // to confirm that model state is invalid
+            Assert.IsTrue(_controller.ModelState.IsValid);
+
+            //check if the currentImage is still same if the new Image is null
+            var resultProduct = await _context.Products.FindAsync(newProduct.Id);
+            Assert.AreEqual($"{currentImage}", resultProduct.image);
+
+            // so the given product will be stored in the _context
+            // so result is not  null
+            Assert.AreEqual(newProduct,
+                await _context.Products.FindAsync(newProduct.Id));
+
+        }
+
+        [TestMethod]
+        public async Task CreatePostForInputImage()
+        {
+            // given the model state is valid 
+            //arrange
+            Product newProduct = GetNewProduct();
+            var currentImage = "Current Image";
+            string newImage =  @"\\img\\pexels_apple_mouse_1_min.jpg";
+            //var stream = new MemoryStream(File.ReadAllBytes(newImage).ToArray());
+            //FormFile formFile = new FormFile(stream, 0, stream.Length, "Data", newImage.Split(@"\").Last());
+            
+            var result = (RedirectToActionResult)await _controller.Create(newProduct, null , currentImage);
+
+            // assert
+            // result will not be null
+            Assert.IsNotNull(result);
+            // to confirm that model state is invalid
+            Assert.IsTrue(_controller.ModelState.IsValid);
+
+            //check if the currentImage is still same if the new Image is null
+            var resultProduct = await _context.Products.FindAsync(newProduct.Id);
+            //Assert.AreNotEqual($"{currentImage}", resultProduct.image);
+
+            // so the given product will be stored in the _context
+            // so result is not  null
+            Assert.AreEqual(newProduct,
+                await _context.Products.FindAsync(newProduct.Id));
+
+            // formFile is update with new file
+            //Assert.IsNotNull((await _context.Products.FindAsync(newProduct.Id)).image.Split(@"-").Last());
+           // Assert.AreEqual(newImage.Split(@"\").Last(), (await _context.Products.FindAsync(newProduct.Id)).image.Split(@"-").Last());
+            
+        }
+
+        private Product GetNewProduct()
+        {
+            productId++;
+            storeId++;
+            categoryId++;
+            return new Product()
+            {
+                Id = productId,
+                Name = "Test Prodct 1",
+                Price = (decimal)12.05,
+                QuantityInKG = 1,
+                CategoryId = 2000,
+                StoreId = 123,
+                Description = "Description 1",
+                image = null
+
+            };
+
+        }
 
 
 
